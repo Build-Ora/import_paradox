@@ -1,0 +1,391 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Complete redesign with brutalist comic aesthetic - bold blacks, thick strokes, halftone patterns, comic yellow accent */
+:root {
+  --background: #fffef0;
+  --foreground: #000000;
+  --card: #ffffff;
+  --card-foreground: #000000;
+  --popover: #ffffff;
+  --popover-foreground: #000000;
+  --primary: #ff3d00;
+  --primary-foreground: #000000;
+  --secondary: #ffeb00;
+  --secondary-foreground: #000000;
+  --muted: #f5f5dc;
+  --muted-foreground: #333333;
+  --accent: #00d4ff;
+  --accent-foreground: #000000;
+  --destructive: #ff0000;
+  --destructive-foreground: #ffffff;
+  --border: #000000;
+  --input: #ffffff;
+  --ring: #000000;
+  --comic-red: #ff3d00;
+  --comic-yellow: #ffeb00;
+  --comic-blue: #00d4ff;
+  --halftone-size: 4px;
+  --radius: 0px;
+  --chart-1: #ff3d00;
+  --chart-2: #ffeb00;
+  --chart-3: #00d4ff;
+  --chart-4: #ff00ff;
+  --chart-5: #00ff00;
+  --sidebar: #fffef0;
+  --sidebar-foreground: #000000;
+  --sidebar-primary: #000000;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #ffeb00;
+  --sidebar-accent-foreground: #000000;
+  --sidebar-border: #000000;
+  --sidebar-ring: #000000;
+}
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #fffef0;
+  --card: #1a1a1a;
+  --card-foreground: #fffef0;
+  --popover: #1a1a1a;
+  --popover-foreground: #fffef0;
+  --primary: #ff3d00;
+  --primary-foreground: #000000;
+  --secondary: #ffeb00;
+  --secondary-foreground: #000000;
+  --muted: #2a2a2a;
+  --muted-foreground: #999999;
+  --accent: #00d4ff;
+  --accent-foreground: #000000;
+  --destructive: #ff0000;
+  --destructive-foreground: #ffffff;
+  --border: #fffef0;
+  --input: #1a1a1a;
+  --ring: #fffef0;
+  --sidebar: #0a0a0a;
+  --sidebar-foreground: #fffef0;
+  --sidebar-primary: #fffef0;
+  --sidebar-primary-foreground: #000000;
+  --sidebar-accent: #ffeb00;
+  --sidebar-accent-foreground: #000000;
+  --sidebar-border: #fffef0;
+  --sidebar-ring: #fffef0;
+}
+
+@theme inline {
+  --font-sans: "Space Grotesk", "Space Grotesk Fallback", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "JetBrains Mono Fallback", monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+/* Comic brutalist animations */
+@keyframes comic-shake {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  10% {
+    transform: translate(-2px, -1px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(2px, 1px) rotate(1deg);
+  }
+  30% {
+    transform: translate(-1px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 1px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(2px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(-2px, -1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(1px, 2px) rotate(1deg);
+  }
+  90% {
+    transform: translate(-1px, -2px) rotate(0deg);
+  }
+}
+
+@keyframes comic-pop {
+  0% {
+    transform: scale(0) rotate(-10deg);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2) rotate(5deg);
+  }
+  70% {
+    transform: scale(0.9) rotate(-2deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes speech-bounce {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-5px) scale(1.02);
+  }
+}
+
+@keyframes halftone-pulse {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes ink-drip {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+@keyframes panel-slide {
+  0% {
+    transform: translateX(-100%) skewX(-5deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) skewX(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes zap-flash {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes comic-float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-2deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(2deg);
+  }
+}
+
+@keyframes speed-lines {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes stamp-in {
+  0% {
+    transform: scale(3) rotate(-15deg);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) rotate(-3deg);
+    opacity: 1;
+  }
+}
+
+.animate-comic-shake:hover {
+  animation: comic-shake 0.5s ease-in-out;
+}
+
+.animate-comic-pop {
+  animation: comic-pop 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+.animate-speech-bounce {
+  animation: speech-bounce 2s ease-in-out infinite;
+}
+
+.animate-halftone-pulse {
+  animation: halftone-pulse 3s ease-in-out infinite;
+}
+
+.animate-comic-float {
+  animation: comic-float 4s ease-in-out infinite;
+}
+
+.animate-stamp-in {
+  animation: stamp-in 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+/* Adding ribbon marquee animation for the 24 hours tag */
+@keyframes ribbon-flow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-ribbon-flow {
+  animation: ribbon-flow 15s linear infinite;
+}
+
+/* Brutalist comic styles */
+.comic-border {
+  border: 4px solid var(--foreground);
+  box-shadow: 6px 6px 0 var(--foreground);
+}
+
+.comic-border-thick {
+  border: 6px solid var(--foreground);
+  box-shadow: 8px 8px 0 var(--foreground);
+}
+
+.comic-border-accent {
+  border: 4px solid var(--foreground);
+  box-shadow: 6px 6px 0 var(--comic-red);
+}
+
+.halftone-bg {
+  background-image: radial-gradient(circle, var(--foreground) 1px, transparent 1px);
+  background-size: 8px 8px;
+}
+
+.halftone-red {
+  background-image: radial-gradient(circle, var(--comic-red) 1px, transparent 1px);
+  background-size: 6px 6px;
+}
+
+.halftone-yellow {
+  background-image: radial-gradient(circle, var(--comic-yellow) 2px, transparent 2px);
+  background-size: 10px 10px;
+}
+
+.halftone-blue {
+  background-image: radial-gradient(circle, var(--comic-blue) 1.5px, transparent 1.5px);
+  background-size: 8px 8px;
+}
+
+.comic-text-shadow {
+  text-shadow: 3px 3px 0 var(--foreground), -1px -1px 0 var(--foreground), 1px -1px 0 var(--foreground), -1px 1px 0
+    var(--foreground);
+}
+
+.comic-text-stroke {
+  -webkit-text-stroke: 2px var(--foreground);
+  paint-order: stroke fill;
+}
+
+.speech-bubble {
+  position: relative;
+  background: var(--card);
+  border: 4px solid var(--foreground);
+}
+
+.speech-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 30px;
+  border: 10px solid transparent;
+  border-top-color: var(--foreground);
+}
+
+.speech-bubble::before {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 34px;
+  border: 6px solid transparent;
+  border-top-color: var(--card);
+  z-index: 1;
+}
+
+.diagonal-stripes {
+  background: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    var(--foreground) 10px,
+    var(--foreground) 12px
+  );
+}
+
+.crosshatch {
+  background-image: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 4px,
+      rgba(0, 0, 0, 0.1) 4px,
+      rgba(0, 0, 0, 0.1) 5px
+    ), repeating-linear-gradient(90deg, transparent, transparent 4px, rgba(0, 0, 0, 0.1) 4px, rgba(0, 0, 0, 0.1) 5px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
