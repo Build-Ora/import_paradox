@@ -6,9 +6,24 @@ import { PowBadge } from "./pow-badge"
 import { Bot, Cpu, Shield, Brain } from "lucide-react"
 
 const themes = [
-  { icon: Bot, name: "Agentic AI", description: "Build autonomous AI agents that can reason and act" },
-  { icon: Cpu, name: "IoT", description: "Connect the physical world with smart devices" },
-  { icon: Shield, name: "Cyber Security & Blockchain", description: "Secure systems, networks, and applications" },
+  {
+    icon: Bot,
+    name: "Agentic AI",
+    description: "Build autonomous AI agents that can reason, plan, and take actions",
+    badge: "AI"
+  },
+  {
+    icon: Shield,
+    name: "Cyber Security & Blockchain",
+    description: "Design secure systems, decentralized apps, and blockchain-powered solutions",
+    badge: "Security"
+  },
+  {
+    icon: Cpu,
+    name: "IoT + Cloud Computing",
+    description: "Integrate smart devices with scalable cloud infrastructure",
+    badge: "Cloud"
+  }
 ];
 
 export function ThemesSection() {

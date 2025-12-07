@@ -17,13 +17,20 @@ export function AboutSection() {
           {/* Main content in speech bubble */}
           <SpeechBubble className="max-w-3xl mx-auto">
             <p className="text-lg md:text-xl leading-relaxed font-mono">
-              <span className="font-black text-[var(--comic-red)]">import paradox</span> is a 24-hour offline hackathon
-              that brings together developers, designers, and innovators to build impactful solutions under tight
-              deadlines. Teams of <span className="bg-[var(--comic-yellow)] px-1 font-bold">2–4 members</span> will work
-              on cutting-edge themes like <span className="font-black">Agentic AI</span> and{" "}
-              <span className="font-black">IoT</span>. All work must be built during the event —{" "}
-              <span className="bg-foreground text-background px-1">no pre-built projects allowed!</span>
-            </p>
+  <span className="font-black text-[var(--comic-red)]">import paradox</span> is a
+  24-hour offline hackathon by <span className="font-black">Build-Ora</span>,
+  hosted at <span className="font-black">Ramaiah University of Applied Sciences, Bangalore</span>.
+  The event brings together students, developers, designers, and innovators to
+  build bold, impactful solutions under tight deadlines. Teams of{" "}
+  <span className="bg-[var(--comic-yellow)] px-1 font-bold">2–4 members</span> will
+  work on exciting themes like <span className="font-black">Agentic AI</span> and{" "}
+  <span className="font-black">IoT</span> — all while vibing with retro energy.
+  All work must be built during the event —{" "}
+  <span className="bg-foreground text-background px-1">
+    no pre-built projects allowed!
+  </span>
+</p>
+
           </SpeechBubble>
 
           {/* Decorative badges */}

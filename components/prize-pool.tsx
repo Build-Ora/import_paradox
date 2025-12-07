@@ -50,7 +50,7 @@ export function PrizePool() {
   </h3>
 
   <div className="inline-block bg-[var(--comic-blue)] border-4 border-background px-8 py-4 -rotate-1 shadow-[6px_6px_0_var(--comic-yellow)]">
-    <p className="text-3xl md:text-4xl font-black text-foreground">₹10,000 × 5</p>
+    <p className="text-3xl md:text-4xl font-black text-foreground">₹20,000</p>
   </div>
 
   <p className="text-sm font-mono mt-3 uppercase tracking-wider text-background">
