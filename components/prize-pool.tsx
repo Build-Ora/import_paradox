@@ -43,20 +43,29 @@ export function PrizePool() {
   ))}
 </div>
 
-{/* Special Prizes Section (paste this) */}
+{/* Special Prizes Section */}
 <div className="mt-16 text-center">
   <h3 className="text-2xl md:text-3xl font-black uppercase tracking-tight text-background mb-6">
     SPECIAL PRIZES
   </h3>
 
-  <div className="inline-block bg-[var(--comic-blue)] border-4 border-background px-8 py-4 -rotate-1 shadow-[6px_6px_0_var(--comic-yellow)]">
+  {/* Track Winners */}
+  <div className="inline-block bg-[var(--comic-blue)] border-4 border-background px-8 py-4 -rotate-1 shadow-[6px_6px_0_var(--comic-yellow)] mb-6">
+    <p className="text-3xl md:text-4xl font-black text-foreground">3 × ₹10,000</p>
+  </div>
+  <p className="text-sm font-mono mt-1 mb-6 uppercase tracking-wider text-background">
+    TRACK WINNER PRIZES
+  </p>
+
+  {/* Special Prize */}
+  <div className="inline-block bg-[var(--comic-yellow)] border-4 border-background px-8 py-4 rotate-1 shadow-[6px_6px_0_var(--comic-blue)]">
     <p className="text-3xl md:text-4xl font-black text-foreground">₹20,000</p>
   </div>
-
-  <p className="text-sm font-mono mt-3 uppercase tracking-wider text-background">
-    FOR OUTSTANDING TRACK WINNERS
+  <p className="text-sm font-mono mt-2 uppercase tracking-wider text-background">
+    SPECIAL AWARD
   </p>
 </div>
+
 
       </div>
     </section>
