@@ -59,7 +59,7 @@ export function HeroSection() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-            <a href="https://forms.gle/cVhgfDC7rXygRMui8" target="_blank" rel="noopener noreferrer">
+            <a href="https://devnovate.co/event/import-paradox" target="_blank" rel="noopener noreferrer">
               <ComicButton variant="primary">REGISTER NOW!</ComicButton>
             </a>
 
