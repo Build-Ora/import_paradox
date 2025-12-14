@@ -21,7 +21,7 @@ export default function Home() {
         <HeroSection />
         <AboutSection />
         <EventDetails />
-        <SelectionProcess />
+        {/* <SelectionProcess /> */}
         <ThemesSection />
         <PrizePool />
         <RulesSection />
