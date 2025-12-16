@@ -9,7 +9,7 @@ const details = [
   { icon: Calendar, label: "Registration Deadline", value: "29-12-2025" },
   { icon: Clock, label: "Duration", value: "24 HOURS", accent: true },
   { icon: Users, label: "Participation", value: "TEAM (2–4)" },
-  { icon: CreditCard, label: "Registration Fee", value: "₹1999" },
+  { icon: CreditCard, label: "Registration Fee", value: "₹1499" },
   { icon: MapPin, label: "Location", value: "RUAS, BANGALORE", accent: true},
   { icon: Zap, label: "Skill Level", value: "ALL LEVELS" },
   { icon: CalendarDays, label: "Event Date", value: "17-01-2026",accent: true },
@@ -17,7 +17,7 @@ const details = [
 
 export function EventDetails() {
   return (
-    <section className="relative py-20 px-4 bg-[var(--comic-yellow)]/10 border-t-4 border-foreground">
+    <section className="relative py-20 px-4 bg-(--comic-yellow)/10 border-t-4 border-foreground">
       <div className="max-w-6xl mx-auto">
         {/* Section header */}
         <div className="text-center mb-12">

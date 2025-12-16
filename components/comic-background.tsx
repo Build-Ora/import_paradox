@@ -22,18 +22,18 @@ export function ComicBackground() {
         style={{ animationDelay: "1s" }}
       />
       <div
-        className="absolute top-1/2 right-1/4 w-16 h-16 bg-[var(--comic-yellow)] opacity-10 rotate-45 animate-comic-float"
+        className="absolute top-1/2 right-1/4 w-16 h-16 bg-(--comic-yellow) opacity-10 rotate-45 animate-comic-float"
         style={{ animationDelay: "2s" }}
       />
 
       {/* Speed lines on sides */}
-      <div className="absolute top-1/4 left-0 w-20 h-[2px] bg-gradient-to-r from-foreground/20 to-transparent" />
-      <div className="absolute top-1/3 left-0 w-32 h-[2px] bg-gradient-to-r from-foreground/15 to-transparent" />
-      <div className="absolute top-2/5 left-0 w-16 h-[2px] bg-gradient-to-r from-foreground/25 to-transparent" />
+      <div className="absolute top-1/4 left-0 w-20 h-0.5 bg-linear-to-r from-foreground/20 to-transparent" />
+      <div className="absolute top-1/3 left-0 w-32 h-0.5 bg-linear-to-r from-foreground/15 to-transparent" />
+      <div className="absolute top-2/5 left-0 w-16 h-0.5 bg-linear-to-r from-foreground/25 to-transparent" />
 
-      <div className="absolute bottom-1/4 right-0 w-20 h-[2px] bg-gradient-to-l from-foreground/20 to-transparent" />
-      <div className="absolute bottom-1/3 right-0 w-32 h-[2px] bg-gradient-to-l from-foreground/15 to-transparent" />
-      <div className="absolute bottom-2/5 right-0 w-16 h-[2px] bg-gradient-to-l from-foreground/25 to-transparent" />
+      <div className="absolute bottom-1/4 right-0 w-20 h-0.5 bg-linear-to-l from-foreground/20 to-transparent" />
+      <div className="absolute bottom-1/3 right-0 w-32 h-0.5 bg-linear-to-l from-foreground/15 to-transparent" />
+      <div className="absolute bottom-2/5 right-0 w-16 h-0.5 bg-linear-to-l from-foreground/25 to-transparent" />
     </div>
   )
 }

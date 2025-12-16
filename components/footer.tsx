@@ -3,8 +3,8 @@
 import { Github,MessageSquare,  Instagram, Linkedin } from "lucide-react"
 
 const socials = [
-  { icon: Github, href: "https://github.com/Build-Ora", label: "GitHub" },
-  { icon: MessageSquare, href: "https://chat.whatsapp.com/FDAWxG0EiujB1LjRIRmyVu", label: "WhatsApp" },
+  { icon: Github, href: "https://github.com/import-paradox", label: "GitHub" },
+  { icon: MessageSquare, href: "https://chat.whatsapp.com/GRTWTycr30gIuIo9TP8Hax", label: "WhatsApp" },
   { icon: Instagram, href: "https://www.instagram.com/build__ora", label: "Instagram" },
   { icon: Linkedin, href: "https://www.linkedin.com/company/build-ora", label: "LinkedIn" },
 ]
@@ -31,12 +31,12 @@ export function Footer() {
         {/* Copyright */}
         <div className="text-center space-y-2">
           <p className="font-mono font-bold">
-            <span className="bg-[var(--comic-red)] text-white px-2 py-1">import paradox</span>
+            <span className="bg-(--comic-red) text-white px-2 py-1">import paradox</span>
             <span className="ml-2">© 2025</span>
           </p>
-          <p className="font-mono text-sm opacity-80">
-            Built with {"<CODE/>"} by Build-Ora
-          </p>
+          {/* <p className="font-mono text-sm opacity-80">
+            Built with {"<CODE/>"} by Build-Ora & Rotaract club of Bengaluru Nava Chaitanya
+          </p> */}
         </div>
 
         {/* Decorative border */}

@@ -22,7 +22,7 @@ export function SpeechBubble({ children, className, direction = "bottom" }: Spee
     <div
       className={cn(
         "relative bg-card border-4 border-foreground p-6 animate-speech-bounce",
-        "after:content-[''] after:absolute after:border-[10px] after:border-transparent",
+        "after:content-[''] after:absolute after:border-10 after:border-transparent",
         "before:content-[''] before:absolute before:border-[6px] before:border-transparent before:z-10",
         tailStyles[direction],
         className,

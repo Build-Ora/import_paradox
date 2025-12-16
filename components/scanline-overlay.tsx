@@ -6,7 +6,7 @@ export function ScanlineOverlay() {
       {/* Horizontal scanning line */}
       <div className="pointer-events-none fixed inset-0 z-40 overflow-hidden">
         <div
-          className="absolute left-0 right-0 h-[2px] animate-scanline"
+          className="absolute left-0 right-0 h-0.5 animate-scanline"
           style={{
             background: "linear-gradient(90deg, transparent, rgba(58, 240, 255, 0.5), transparent)",
             boxShadow: "0 0 20px rgba(58, 240, 255, 0.3)",

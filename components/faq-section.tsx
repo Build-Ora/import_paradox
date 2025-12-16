@@ -60,7 +60,7 @@ export function FAQSection() {
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 className={cn(
                   "w-full px-6 py-4 flex items-center justify-between text-left font-bold uppercase",
-                  openIndex === index ? "bg-[var(--comic-yellow)]" : "bg-card hover:bg-[var(--comic-yellow)]/50",
+                  openIndex === index ? "bg-(--comic-yellow)" : "bg-card hover:bg-(--comic-yellow)/50",
                 )}
               >
                 <span className="font-mono">{faq.question}</span>

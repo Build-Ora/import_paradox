@@ -21,7 +21,7 @@ export function ComicCard({ children, className, variant = "default", rotate = 0
   return (
     <div
       className={cn(
-        "p-6 transition-all duration-200 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:shadow-[10px_10px_0_var(--foreground)]",
+        "p-6 transition-all duration-200 hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[10px_10px_0_var(--foreground)]",
         variants[variant],
         className,
       )}

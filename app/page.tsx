@@ -1,7 +1,6 @@
 import { HeroSection } from "@/components/hero-section"
 import { AboutSection } from "@/components/about-section"
 import { EventDetails } from "@/components/event-details"
-import { SelectionProcess } from "@/components/selection-process"
 import { ThemesSection } from "@/components/themes-section"
 import { PrizePool } from "@/components/prize-pool"
 import { RulesSection } from "@/components/rules-section"
@@ -21,7 +20,6 @@ export default function Home() {
         <HeroSection />
         <AboutSection />
         <EventDetails />
-        {/* <SelectionProcess /> */}
         <ThemesSection />
         <PrizePool />
         <RulesSection />

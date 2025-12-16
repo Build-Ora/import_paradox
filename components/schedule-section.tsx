@@ -31,7 +31,7 @@ export function ScheduleSection() {
   const [hoveredRow, setHoveredRow] = useState<number | null>(null)
 
   return (
-    <section className="relative py-20 px-4 bg-[var(--comic-blue)]/10 border-t-4 border-foreground">
+    <section className="relative py-20 px-4 bg-(--comic-blue)/10 border-t-4 border-foreground">
       <div className="max-w-4xl mx-auto">
         {/* Section header */}
         <div className="text-center mb-12">
@@ -53,12 +53,12 @@ export function ScheduleSection() {
               onMouseEnter={() => setHoveredRow(index)}
               onMouseLeave={() => setHoveredRow(null)}
               className={`grid grid-cols-2 border-t-4 border-foreground transition-all duration-150 ${
-                hoveredRow === index ? "bg-[var(--comic-yellow)] translate-x-2" : "bg-card"
+                hoveredRow === index ? "bg-(--comic-yellow) translate-x-2" : "bg-card"
               }`}
             >
               <div
                 className={`px-6 py-4 font-mono font-bold border-r-4 border-foreground ${
-                  hoveredRow === index ? "text-foreground" : "text-[var(--comic-red)]"
+                  hoveredRow === index ? "text-foreground" : "text-(--comic-red)"
                 }`}
               >
                 {item.time}

@@ -20,7 +20,7 @@ export function PrizePool() {
 
         {/* Total prize pool */}
         <div className="text-center mb-12">
-          <div className="inline-block bg-[var(--comic-yellow)] border-4 border-background px-8 py-4 -rotate-2 shadow-[8px_8px_0_var(--comic-red)]">
+          <div className="inline-block bg-(--comic-yellow) border-4 border-background px-8 py-4 -rotate-2 shadow-[8px_8px_0_var(--comic-red)]">
             <span className="text-5xl md:text-7xl font-black text-foreground">₹2,00,000+</span>
           </div>
           <p className="text-lg font-mono mt-4 uppercase tracking-wider text-background">TOTAL PRIZE POOL</p>
@@ -50,7 +50,7 @@ export function PrizePool() {
   </h3>
 
   {/* Track Winners */}
-  <div className="inline-block bg-[var(--comic-blue)] border-4 border-background px-8 py-4 -rotate-1 shadow-[6px_6px_0_var(--comic-yellow)] mb-6">
+  <div className="inline-block bg-(--comic-blue) border-4 border-background px-8 py-4 -rotate-1 shadow-[6px_6px_0_var(--comic-yellow)] mb-6">
     <p className="text-3xl md:text-4xl font-black text-foreground">3 × ₹10,000</p>
   </div>
   <p className="text-sm font-mono mt-1 mb-6 uppercase tracking-wider text-background">
@@ -58,7 +58,7 @@ export function PrizePool() {
   </p>
 
   {/* Special Prize */}
-  <div className="inline-block bg-[var(--comic-yellow)] border-4 border-background px-8 py-4 rotate-1 shadow-[6px_6px_0_var(--comic-blue)]">
+  <div className="inline-block bg-(--comic-yellow) border-4 border-background px-8 py-4 rotate-1 shadow-[6px_6px_0_var(--comic-blue)]">
     <p className="text-3xl md:text-4xl font-black text-foreground">₹20,000</p>
   </div>
   <p className="text-sm font-mono mt-2 uppercase tracking-wider text-background">

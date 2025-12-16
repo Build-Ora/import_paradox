@@ -25,7 +25,7 @@ export function PowBadge({ text, className, color = "yellow", size = "md" }: Pow
   return (
     <div
       className={cn(
-        "inline-block font-black uppercase tracking-wider border-4 border-foreground rotate-[-3deg] shadow-[3px_3px_0_var(--foreground)] animate-stamp-in",
+        "inline-block font-black uppercase tracking-wider border-4 border-foreground -rotate-3 shadow-[3px_3px_0_var(--foreground)] animate-stamp-in",
         colors[color],
         sizes[size],
         className,
