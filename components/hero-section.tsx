@@ -59,9 +59,9 @@ export function HeroSection() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-            <a href="https://unstop.com/hackathons/import-paradox-m-s-ramaiah-university-of-applied-sciences-msruas-bengaluru-karnataka-1609725" target="_blank" rel="noopener noreferrer">
+            {/* <a href="https://unstop.com/hackathons/import-paradox-m-s-ramaiah-university-of-applied-sciences-msruas-bengaluru-karnataka-1609725" target="_blank" rel="noopener noreferrer">
               <ComicButton variant="primary">REGISTER NOW!</ComicButton>
-            </a>
+            </a> */}
 
             <a
               href="https://docs.google.com/presentation/d/18LuCMBHyDVI-IuLYzyQqNPxA7NfHhJcL/"

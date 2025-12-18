@@ -6,13 +6,13 @@ import { Wifi, Calendar, Clock, Users, CreditCard, MapPin, Zap, CalendarDays } f
 
 const details = [
   { icon: Wifi, label: "Event Status", value: "OFFLINE", accent: true },
-  { icon: Calendar, label: "Registration Deadline", value: "29-12-2025" },
+  { icon: Calendar, label: "Registration Deadline", value: "COMING SOON" },
   { icon: Clock, label: "Duration", value: "24 HOURS", accent: true },
   { icon: Users, label: "Participation", value: "TEAM (2–4)" },
   { icon: CreditCard, label: "Registration Fee", value: "₹1499" },
   { icon: MapPin, label: "Location", value: "RUAS, BANGALORE", accent: true},
   { icon: Zap, label: "Skill Level", value: "ALL LEVELS" },
-  { icon: CalendarDays, label: "Event Date", value: "17-01-2026",accent: true },
+  { icon: CalendarDays, label: "Event Date", value: "COMING SOON",accent: true },
 ]
 
 export function EventDetails() {
