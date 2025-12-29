@@ -53,7 +53,7 @@ export function HeroSection() {
             <p className="text-lg font-mono font-bold">
               <span className="bg-foreground text-background px-2 py-1">Build-Ora</span>
               <span className="mx-2">×</span>
-              <span className="bg-foreground text-background px-2 py-1">Nava Chaitanya Rotaract Club</span>
+              <span className="bg-foreground text-background px-2 py-1">Nava Chaitanya</span>
             </p>
           </div>
 

@@ -10,7 +10,7 @@ const contacts = [
     phone: "+91 9019823296",
   },
   {
-    name: "Rotaract club of Bengaluru Nava Chaitanya",
+    name: "Nava Chaitanya",
     phone: "+91 7892864515",
   },
 ]
