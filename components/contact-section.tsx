@@ -5,6 +5,10 @@ import { User, Mail, Phone } from "lucide-react"
 
 const contacts = [
   {
+    name: "RAHUL RAO",
+    phone: "+91 8088524072",
+  },
+  {
     name: "Build-ora",
     email: "build.ora201@gmail.com",
     phone: "+91 9019823296",
@@ -41,7 +45,7 @@ export function ContactSection() {
         <div className="flex flex-col items-center gap-4">
 
           {/* Email only for first contact */}
-          {index === 0 && (
+          {index === 1 && (
             <a
               href={`mailto:${c.email}`}
               className="inline-flex items-center gap-3 border-4 border-foreground px-4 py-2 shadow-[3px_3px_0_var(--foreground)] hover:bg-(--comic-yellow) hover:shadow-[5px_5px_0_var(--foreground)] hover:-translate-x-1 hover:-translate-y-1 transition-all"
