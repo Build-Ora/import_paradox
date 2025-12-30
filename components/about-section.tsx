@@ -18,7 +18,7 @@ export function AboutSection() {
           <SpeechBubble className="max-w-3xl mx-auto">
             <p className="text-lg md:text-xl leading-relaxed font-mono">
   <span className="font-black text-(--comic-red)">import paradox</span> is a
-  24-hour offline hackathon by <span className="font-black bg-(--comic-red) text-white">Build-Ora</span> and <span className="font-black bg-(--comic-red) text-white">Rotaract club of Bengaluru Nava Chaitanya </span>,
+  24-hour offline hackathon organised by <span className="font-black bg-(--comic-red) text-white">Rotaract club of Bengaluru Nava Chaitanya</span> and <span className="font-black bg-(--comic-red) text-white">Build-Ora </span>,
   hosted at <span className="font-black bg-(--comic-blue)">Ramaiah University of Applied Sciences, Bangalore</span>.
   The event brings together students, developers, designers, and innovators to
   build bold, impactful solutions under tight deadlines. Teams of{" "}
