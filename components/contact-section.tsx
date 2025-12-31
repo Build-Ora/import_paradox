@@ -5,8 +5,9 @@ import { User, Mail, Phone } from "lucide-react"
 
 const contacts = [
   {
-    name: "RAHUL RAO",
-    phone: "+91 8088524072",
+    name: "Nava Chaitanya",
+    email: "racnavachaitanya3192@gmail.com",
+    phone: "+91 7892864515",
   },
   {
     name: "Build-ora",
@@ -14,9 +15,9 @@ const contacts = [
     phone: "+91 9019823296",
   },
   {
-    name: "Nava Chaitanya",
-    phone: "+91 7892864515",
-  },
+    name: "RAHUL RAO",
+    phone: "+91 8088524072",
+  }
 ]
 
 export function ContactSection() {
