@@ -9,7 +9,7 @@ const details = [
   { icon: Calendar, label: "Registration Deadline", value: "COMING SOON" },
   { icon: Clock, label: "Duration", value: "24 HOURS", accent: true },
   { icon: Users, label: "Participation", value: "TEAM (2–4)" },
-  { icon: CreditCard, label: "Registration Fee", value: "₹1499" },
+  { icon: CreditCard, label: "Registration Fee", value: "₹1799" },
   { icon: MapPin, label: "Location", value: "RUAS, BANGALORE", accent: true},
   { icon: Zap, label: "Skill Level", value: "ALL LEVELS" },
   { icon: CalendarDays, label: "Event Date", value: "21-02-2026",accent: true },
