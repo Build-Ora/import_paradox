@@ -41,13 +41,13 @@ export function HeroSection() {
           {/* Location and organizers */}
           <div className="mb-10 space-y-4">
             <a
-              href="https://maps.app.goo.gl/PLuecgLZvfpuzRmYA"
+              href="https://maps.app.goo.gl/WBMb5f7i4bdwHtfE7"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-(--comic-yellow) border-4 border-foreground px-6 py-3 shadow-[4px_4px_0_var(--foreground)] rotate-1 hover:-translate-y-1 hover:-translate-x-1 transition-all"
             >
               <MapPin className="w-6 h-6 text-foreground" />
-              <span className="font-mono font-bold uppercase">Ramaiah University of Applied Sciences, Bengaluru</span>
+              <span className="font-mono font-bold uppercase">Faculty of Pharmacy, Ramaiah University of Applied Sciences, Bengaluru</span>
             </a>
 
             <p className="text-lg font-mono font-bold">
@@ -59,9 +59,9 @@ export function HeroSection() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-            {/* <a href="https://unstop.com/hackathons/import-paradox-m-s-ramaiah-university-of-applied-sciences-msruas-bengaluru-karnataka-1609725" target="_blank" rel="noopener noreferrer">
+            <a href="https://unstop.com/hackathons/import-paradox-m-s-ramaiah-university-of-applied-sciences-msruas-bengaluru-karnataka-1623948" target="_blank" rel="noopener noreferrer">
               <ComicButton variant="primary">REGISTER NOW!</ComicButton>
-            </a> */}
+            </a>
 
             <a
               href="https://docs.google.com/presentation/d/18LuCMBHyDVI-IuLYzyQqNPxA7NfHhJcL/"
