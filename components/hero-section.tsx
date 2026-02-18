@@ -59,7 +59,7 @@ export function HeroSection() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-            <a href="https://unstop.com/hackathons/import-paradox-m-s-ramaiah-university-of-applied-sciences-msruas-bengaluru-karnataka-1623948" target="_blank" rel="noopener noreferrer">
+            <a href="https://unstop.com/o/b4RrPX0?utm_medium=Share&utm_source=buildora50816&utm_campaign=Online_coding_challenge" target="_blank" rel="noopener noreferrer">
               <ComicButton variant="primary">REGISTER NOW!</ComicButton>
             </a>
 
