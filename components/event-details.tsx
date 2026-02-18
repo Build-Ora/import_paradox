@@ -8,11 +8,11 @@ const details = [
   { icon: Wifi, label: "Event Status", value: "OFFLINE", accent: true },
   { icon: Calendar, label: "Registration Deadline", value: "COMING SOON" },
   { icon: Clock, label: "Duration", value: "24 HOURS", accent: true },
-  { icon: Users, label: "Participation", value: "TEAM (2–4)" },
-  { icon: CreditCard, label: "Registration Fee", value: "₹1799" },
+  { icon: Users, label: "Participation", value: "TEAM (3–4)" },
+  { icon: CreditCard, label: "Registration Fee", value: "FREE" },
   { icon: MapPin, label: "Location", value: "RUAS, BANGALORE", accent: true},
   { icon: Zap, label: "Skill Level", value: "ALL LEVELS" },
-  { icon: CalendarDays, label: "Event Date", value: "07-03-2026",accent: true },
+  { icon: CalendarDays, label: "Event Date" , value: "21-03-2026",accent: true },
 ]
 
 export function EventDetails() {

@@ -10,6 +10,7 @@ import { LinksSection } from "@/components/links-section"
 import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
 import { ComicBackground } from "@/components/comic-background"
+import { SelectionProcess } from "@/components/selection-process"
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <HeroSection />
         <AboutSection />
         <EventDetails />
+        <SelectionProcess/>
         <ThemesSection />
         <PrizePool />
         <RulesSection />
