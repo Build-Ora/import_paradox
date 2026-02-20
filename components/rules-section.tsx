@@ -5,7 +5,7 @@ import { useState } from "react"
 
 const rules = [
   "All code must be written during the 24-hour hackathon period.",
-  "Teams must consist of 2-4 members.",
+  "Teams must consist of 3-4 members.",
   "Pre-built projects or code are strictly prohibited.",
   "Use of open-source libraries and frameworks is allowed.",
   "Final submissions must include a working demo and pitch presentation.",

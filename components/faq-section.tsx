@@ -9,7 +9,7 @@ const faqs = [
   {
     question: "Who can participate?",
     answer:
-      "Anyone with a passion for technology can participate. Whether you're a student, professional, or hobbyist, you're welcome to join. Teams must consist of 2-4 members.",
+      "Anyone with a passion for technology can participate. Whether you're a student, professional, or hobbyist, you're welcome to join. Teams must consist of 3-4 members.",
   },
   {
     question: "What should I bring?",
