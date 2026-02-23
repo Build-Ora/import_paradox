@@ -64,7 +64,7 @@ export function HeroSection() {
             </a>
 
             <a
-              href="https://docs.google.com/presentation/d/18LuCMBHyDVI-IuLYzyQqNPxA7NfHhJcL/"
+              href="https://docs.google.com/presentation/d/18LuCMBHyDVI-IuLYzyQqNPxA7NfHhJcL/export/pptx"
               target="_blank"
               rel="noopener noreferrer"
             >
