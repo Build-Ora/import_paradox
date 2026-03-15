@@ -6,7 +6,7 @@ import { Wifi, Calendar, Clock, Users, CreditCard, MapPin, Zap, CalendarDays } f
 
 const details = [
   { icon: Wifi, label: "Event Status", value: "OFFLINE", accent: true },
-  { icon: Calendar, label: "Registration Deadline", value: "14-03-2026" },
+  { icon: Calendar, label: "Registration Deadline", value: "21-03-2026" },
   { icon: Clock, label: "Duration", value: "24 HOURS", accent: true },
   { icon: Users, label: "Participation", value: "TEAM (3–4)" },
   { icon: CreditCard, label: "Registration Fee", value: "FREE" },
