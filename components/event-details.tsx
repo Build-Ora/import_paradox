@@ -12,7 +12,7 @@ const details = [
   { icon: CreditCard, label: "Registration Fee", value: "FREE" },
   { icon: MapPin, label: "Location", value: "RUAS, BANGALORE", accent: true},
   { icon: Zap, label: "Skill Level", value: "ALL LEVELS" },
-  { icon: CalendarDays, label: "Event Date" , value: "04-04-2026",accent: true },
+  { icon: CalendarDays, label: "Event Date" , value: "COMING SOON",accent: true },
 ]
 
 export function EventDetails() {
